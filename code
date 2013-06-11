@@ -3,20 +3,22 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class CalcRectArea {
-public static void main(String[] arg){
+public static void main(String[] arg)
+{
 
 int width = 0;
 int length = 0;
+
 try
 {
 
-BufferReader bd = new BufferReader(new InputStreamReader(System.in));
+BufferReader br = new BufferReader(new InputStreamReader(System.in));
 
-System.out.println("Enter the lenght of rectangle: ");
+System.out.println("Enter the length of rectangle: ");
 length = Integer.parseInt(br.readLine);
 
 
-System.out.printl("Enter the width of rectanlge: ");
+System.out.printl("Enter the width of rectangle: ");
 width = Integer.parseInt(br.readLine);
 catch(NumberFormatException ne)
 {
