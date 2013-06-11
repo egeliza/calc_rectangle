@@ -4,18 +4,18 @@ import java.io.InputStreamReader;
 
 public class CalcRectArea {
     public static void main(String[] arg){
-    
+
         int width = 0;
         int length = 0;
-        
+
         try {
-            BufferReader bd = new BufferReader(new InputStreamReader(System.in));
-            
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
             System.out.println("Enter the lenght of rectangle: ");
-            length = Integer.parseInt(br.readLine);
-            
-            System.out.printl("Enter the width of rectanlge: ");
-            width = Integer.parseInt(br.readLine);
+            length = Integer.parseInt(br.readLine());
+
+            System.out.println("Enter the width of rectanlge: ");
+            width = Integer.parseInt(br.readLine());
         }
         catch (NumberFormatException ne) {
             System.out.println("Invalid value " + ne);
@@ -25,10 +25,10 @@ public class CalcRectArea {
             System.out.println("IO error " + ioe);
             System.exit(0);
         }
-        
+
         int area = length * width;
-        int perimeter = 2(length + width);
-    
+        int perimeter = 2 * (length + width);
+
         System.out.println("The area of rectangle is: " + area + " and the perimeter is: " + perimeter);
     }
 }
